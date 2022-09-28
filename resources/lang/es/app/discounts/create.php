@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'create_discount'                => 'Crear descuento',
+    'create_discount_description'    => 'En esta sección podrá crear un descuento',
+    'rule_name_label'                => 'Nombre de la regla',
+    'rule_name_helper'               => '30 carácteres como máximo',
+    'rule_active_label'              => 'Activa',
+    'brand_label'                    => 'Rentadora',
+    'access_type_label'              => 'Tipo de acceso',
+    'priority_label'                 => 'Prioridad',
+    'region_label'                   => 'Región',
+    'create_discount_info_bubble'    => 'Desde esta sección podrá cargar descuentos promocionales AWD / BCD, o un descuento GSA (cediendo comisión). Podrá agregar uno o ambos descuentos al mismo tiempo para que se apliquen al mismo tiempo. Tenga en cuenta que si una tarifa tiene diferentes precios por vigencia, deberá definir descuentos diferentes para cada uno de ellos',
+    'application_period'             => 'Período de aplicación',
+    'application_period_1'           => 'Período de aplicación 1',
+    'application_period_2'           => 'Período de aplicación 2',
+    'application_period_3'           => 'Período de aplicación 3',
+    'awd_bcd_discount_code_label'    => 'Código de descuento AWB / BCD',
+    'gsa_discount_percentage_label'  => 'Porcentaje de descuento GSA',
+    'placeholder_from'               => 'Desde...',
+    'placeholder_to'                 => 'Hasta...',
+    'placeholder_code'               => 'Código...',
+    'placeholder_discount'           => 'Porcentaje...',
+    'placeholder_start_date'         => 'Fecha de inicio',
+    'placeholder_end_date'           => 'Fecha de fin',
+    'cancel_button'                  => 'Cancelar',
+    'save_button'                    => 'Guardar',
+];
