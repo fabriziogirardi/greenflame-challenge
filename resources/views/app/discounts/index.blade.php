@@ -22,12 +22,6 @@
         </div>
     </x-slot>
 
-    <script>
-        $('form').on('submit', function () {
-            return confirm('LALA');
-        });
-    </script>
-
     @if(session()->has('message'))
         <div class="max-w-6xl mx-auto py-2 px-6 mt-2 border rounded bg-cyan-600 text-neutral-100">{{ session()->get('message') }}</div>
     @endif
