@@ -66,6 +66,7 @@ class DiscountController extends Controller
             ->select([
                 'discounts.*',
                 'brands.name as brand_name',
+                'brands.active as brand_active',
                 'access_types.name as access_type_name',
                 'regions.code as region_code'
             ])
@@ -83,7 +84,8 @@ class DiscountController extends Controller
         }
 
         // Finish query builder, sort, and paginate
-        $discounts = $discounts->orderBy($sort, $direction)
+        $discounts = $discounts->where('brands.active', 1)
+            ->orderBy($sort, $direction)
             ->orderBy('id', 'ASC')
             ->paginate(10)
             ->withQueryString();
