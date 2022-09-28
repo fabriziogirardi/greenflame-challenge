@@ -169,7 +169,7 @@
                             </div>
                             <div class="w-16">
                                 @foreach($discount->discount_range as $range)
-                                    {{ $range->from_days }} - {{ $range->to_days }}
+                                    {{ $range->from_days }} - {{ $range->to_days }}<br/>
                                 @endforeach
                             </div>
                             <div class="w-20">
