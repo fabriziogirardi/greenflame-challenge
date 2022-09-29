@@ -60,7 +60,7 @@ class DiscountController extends Controller
             ->join('regions', 'discounts.region_id', '=', 'regions.id')
             ->whereHas('discount_range', function($q) use ($search) {
                 if (!empty($search['code'])) {
-                    return $q->where('code', 'like', '%' . $search['code'] . '%');
+                    return $q->where('code', '=', $search['code']);
                 }
             })
             ->select([
