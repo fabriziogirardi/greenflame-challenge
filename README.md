@@ -12,6 +12,7 @@ This application was designed to fulfill a challenge by GreenFlame, in order to 
 ## Deployment process
 
 - Copy the repository to the public folder inside your web server
+- Run `composer install` while inside your project folder
 - Rename `.env.example` to `.env` then edit the file and set the correct values to the MySQL connection database
 - Run the command `php artisan migrate:fresh --seed` in order to completely run migrations and seed the database with default data
 - Run the command `php artisan optimize` to renew the cache and avoid having old cached routes that may conflict with the deployment
