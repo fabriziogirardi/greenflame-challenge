@@ -1,6 +1,6 @@
 ## About this application
 
-This application was designed to fulfill a challenge by GreenFlame, in order to continue the process of a job position request. It was build using Laravel 8
+This application was designed to fulfill a challenge by GreenFlame, in order to continue the process of a job position request. It was built using Laravel 8
 
 Inside `01-challenge-requirements` folder, you can find a .pdf file containing the requirements (in spanish), two SQL Dumps used to create the migrations, and two images presenting the structure of the front end requirements.
 
