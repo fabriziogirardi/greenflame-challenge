@@ -1,6 +1,8 @@
 ## About this application
 
-This application was designed to fulfill a challenge by GreenFlame, in order to continue the process of a job position request. It was build using Laravel 8
+This application was designed to fulfill a challenge by GreenFlame, in order to continue the process of a job position request. It was built using Laravel 8
+
+Inside `01-challenge-requirements` folder, you can find a .pdf file containing the requirements (in spanish), two SQL Dumps used to create the migrations, and two images presenting the structure of the front end requirements.
 
 
 ## Deployment requirements
@@ -12,8 +14,9 @@ This application was designed to fulfill a challenge by GreenFlame, in order to 
 ## Deployment process
 
 - Copy the repository to the public folder inside your web server
-- Run `composer install` while inside your project folder
 - Rename `.env.example` to `.env` then edit the file and set the correct values to the MySQL connection database
+- Run the command `composer install` while inside your project's folder
+- Run the command `php artisan key:generate` while inside your project's folder
 - Run the command `php artisan migrate:fresh --seed` in order to completely run migrations and seed the database with default data
 - Run the command `php artisan optimize` to renew the cache and avoid having old cached routes that may conflict with the deployment
 - Access the website using you web browser, and login using `admin@example.com` as the user, and `password` as the password
